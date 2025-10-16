@@ -1,0 +1,222 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* CONTAINER PRINCIPAL */
+.Container {
+  width: 50%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* SECTION HAUTE (texte + étoiles) */
+.bloc1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.Section1 {
+  flex: 1;
+  color: #555;
+}
+
+.Section1 h2 {
+  color: #55086F;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.Section1 p {
+  color: #777;
+  line-height: 1.6;
+}
+
+/* ÉTOILES */
+.Etoile {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative; /* permet l'usage de left sur les enfants */
+  align-items: flex-start;
+}
+
+
+.Etoile1,
+.Etoile2,
+.Etoile3 {
+  position: relative;
+  width: 100%;
+  background-color: #f6f2f6;
+  padding: 12px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  transition: background-color 0.3s;
+}
+
+.Etoile1 { left: 2%; }
+.Etoile2 { left: -6px; } 
+.Etoile3 { left: -6%; } 
+
+
+.Etoile1:hover, .Etoile2:hover, .Etoile3:hover {
+  background-color: #eae6ea;
+  cursor: pointer;
+}
+
+.stars {
+  color: #f9d71c;
+  font-size: 1.1rem;
+}
+
+.Etoile p {
+  color: #333;
+  font-weight: 600;
+}
+
+/* SECTION BASSE (témoignages) */
+.bloc2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.Section2,
+.Section3,
+.Section4 {
+  background-color: #55086F;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+
+.Section4 {
+  grid-column: 1 / 3;
+}
+
+.Section2:hover,
+.Section3:hover,
+.Section4:hover {
+  background-color: #7d1e9f;
+  cursor: pointer;
+}
+
+/* Détails à l’intérieur des cartes */
+.Sousect {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.Image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Sousect h3 {
+  font-size: 1rem;
+}
+
+.Sousect p {
+  font-size: 0.9rem;
+  color: #d3b9ea;
+}
+
+.Section2 p,
+.Section3 p,
+.Section4 p {
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .Container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bloc1 {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .Etoile2,
+  .Etoile3 {
+    left: -3px;
+  }
+
+
+  .Section1 h2 {
+    font-size: 1.8rem;
+  }
+
+  .Etoile {
+    width: 100%;
+  }
+
+  .bloc2 {
+    grid-template-columns: 1fr;
+  }
+
+  .Section4 {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .Section1 h2 {
+    font-size: 1.5rem;
+  }
+
+  .Section1 p,
+  .Section2 p,
+  .Section3 p,
+  .Section4 p {
+    font-size: 0.9rem;
+  }
+   .Etoile2,
+  .Etoile3 {
+    left: 0; /* annuler pour éviter chevauchement sur très petit écran */
+  }
+  .Etoile1, .Etoile2, .Etoile3 {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+  .stars {
+    font-size: 1rem;
+  }
+
