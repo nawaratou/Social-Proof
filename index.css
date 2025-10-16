@@ -16,7 +16,7 @@ body {
 
 /* CONTAINER PRINCIPAL */
 .Container {
-  width: 50%;
+  width: 90%;
   max-width: 1200px;
   margin: 40px auto;
 }
@@ -24,11 +24,9 @@ body {
 /* SECTION HAUTE (texte + étoiles) */
 .bloc1 {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 50px;
   gap: 40px;
-  flex-wrap: wrap;
 }
 
 .Section1 {
@@ -53,7 +51,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  position: relative; /* permet l'usage de left sur les enfants */
+ /* position: relative;  permet l'usage de left sur les enfants */
   align-items: flex-start;
 }
 
@@ -70,7 +68,6 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 15px;
-  transition: background-color 0.3s;
 }
 
 .Etoile1 { left: 2%; }
@@ -95,7 +92,7 @@ body {
 
 /* SECTION BASSE (témoignages) */
 .bloc2 {
-  display: grid;
+  display: grid; /* element en grille*/
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
@@ -107,7 +104,7 @@ body {
   color: white;
   border-radius: 10px;
   padding: 20px;
-  transition: background-color 0.3s;
+  
 }
 
 .Section4 {
@@ -159,12 +156,13 @@ body {
 }
 
 /* RESPONSIVE DESIGN */
+/*le container s'elargit*/
 @media (max-width: 1024px) {
   .Container {
     width: 95%;
   }
 }
-
+/*les elements passe en colonne */
 @media (max-width: 768px) {
   .bloc1 {
     flex-direction: column;
@@ -172,10 +170,15 @@ body {
     align-items: center;
   }
   .Etoile2,
-  .Etoile3 {
+  .Etoile3,.Etoile1 {
     left: -3px;
   }
-
+.Etoile1, .Etoile2, .Etoile3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
   .Section1 h2 {
     font-size: 1.8rem;
@@ -193,7 +196,7 @@ body {
     grid-column: 1;
   }
 }
-
+/*les etoiles devient verticale sur toute largeur*/
 @media (max-width: 480px) {
   .Section1 h2 {
     font-size: 1.5rem;
@@ -209,14 +212,12 @@ body {
   .Etoile3 {
     left: 0; /* annuler pour éviter chevauchement sur très petit écran */
   }
-  .Etoile1, .Etoile2, .Etoile3 {
-    width: 100%;
-    flex-direction: column;
-    text-align: center;
-  }
+  
 }
 
   .stars {
     font-size: 1rem;
   }
-
+@media (max-width:425px) {
+   
+}
