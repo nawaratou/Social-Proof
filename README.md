@@ -1,41 +1,37 @@
- SOCIAL PROOF:
- projet N2:
- Description:
-Ce projet est une reproduction fidèle d’un design de section “Social Proof” (preuve sociale) en HTML et CSS.
-.Il met en avant les avis clients et les évaluations sous forme de cartes colorées et blocs de témoignages modernes et responsives.
---------------------------------------------------------------------------------------------------------------------------------------------
-* L’objectif du projet est de:
-- pratiquer la structuration en Flexbox;
-- la gestion des espacements des tailles de blocs;
-- le respect d’un design précis fourni sous forme d’image.
- -----------------------------------------------------------------------------------------------------------------------------------------------
- * Fonctionnalités:
-
-- Disposition fluide et centrée à l’écran
- Trois blocs violets :
-.Deux blocs côte à côte en haut
-Un troisième bloc en bas, ayant une largeur équivalente aux deux du dessus.
-** Bloc des étoiles élargi pour un meilleur équilibre visuel.
--------Design fidèle à la maquette fournie------
-Structure simple, lisible et réutilisable
---------------------------------------------------------------------------------------------------------------------------------------------------
- * Technologies utilisées:
-
-- HTML5 : pour la structure du contenu
-- CSS3 (Flexbox) : pour la mise en page et le style visuel
-----------------------------------------------------------------------------------------------------------------------------------------------------
-* Structure du projet
- Social-Proof-Section
- index.html       # Structure principale
- style.css        # Fichier de styles
- README.md        # Documentation du projet
-* Instructions d’utilisation:
-Ouvre le fichier index.html dans ton navigateur.
-Profite du rendu visuel et compare-le avec la maquette !
---------------------------------------------------------------------------------------------------------------------------------------------------
-* Objectif pédagogique
-Ce projet permet de :
-Maîtriser la mise en page en Flexbox
-Comprendre la hiérarchie des blocs
-Reproduire fidèlement un design statique
-Ajuster les tailles et espacements pour un rendu équilibré et professionnel.
+Social Proof – Projet N°2
+1. Description
+Le projet Social Proof est une reproduction fidèle d’un design de section mettant en valeur la preuve sociale à travers des témoignages clients et évaluations.
+Réalisé uniquement en HTML5 et CSS3, il illustre une mise en page moderne, équilibrée et responsive.
+Ce travail met l’accent sur la précision du design, la cohérence des blocs et la maîtrise de la mise en page en Flexbox.
+2. Objectifs du projet
+Pratiquer la structuration d’une page web avec Flexbox
+Gérer efficacement les espacements, marges et proportions des blocs
+Reproduire un design donné de manière fidèle et harmonieuse
+3. Fonctionnalités principales
+Disposition centrée et fluide de l’ensemble des sections
+Trois blocs violets organisés comme suit :
+Deux blocs alignés horizontalement en haut
+Un troisième bloc en bas, avec une largeur équivalente aux deux premiers réunis
+Bloc des étoiles élargi pour un meilleur équilibre visuel
+Design fidèle à la maquette fournie
+Code clair, lisible et facilement réutilisable
+4. Technologies utilisées
+Technologie	Rôle
+HTML5	Structure sémantique du contenu
+CSS3 (Flexbox)	Mise en page, alignement et style visuel
+5. Structure du projet
+Social-Proof-Section/
+│
+├── index.html       # Structure principale du projet
+├── style.css        # Feuille de style CSS (mise en page et design)
+└── README.md        # Documentation du projet
+6. Instructions d’utilisation
+Cloner le projet ou le télécharger.
+Ouvrir le fichier index.html dans un navigateur web.
+Observer le rendu final et le comparer avec la maquette fournie.
+7. Objectifs pédagogiques
+Ce projet vise à renforcer les compétences suivantes :
+Compréhension de la hiérarchie et de la logique des blocs HTML
+Maîtrise de la mise en page en Flexbox
+Capacité à reproduire un design statique professionnel
+Sens de l’équilibre visuel et de la précision graphique
